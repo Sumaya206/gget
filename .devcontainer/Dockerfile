@@ -26,22 +26,30 @@ RUN set -eux; \
     bash /tmp/miniconda.sh -b -p "$CONDA_DIR"; \
     rm /tmp/miniconda.sh
 
+# Force conda to use the stable classic solver to avoid libarchive errors
+RUN conda config --set solver classic
+
 # Configure conda channels: use conda-forge and bioconda only (no defaults/Anaconda TOS needed)
 RUN conda config --remove channels defaults 2>/dev/null; \
     conda config --add channels conda-forge && \
     conda config --add channels bioconda && \
     conda config --set channel_priority strict
 
-# Core scientific Python stack via conda
-RUN conda install -y -c conda-forge -c bioconda --override-channels \
-        numpy \
-        pandas \
-        matplotlib \
-    && conda clean -afy
+# Core scientific Python stack via conda (Added Python pin)
+RUN /opt/conda/bin/conda install -y -c conda-forge -c bioconda --override-channels \
+        python=3.11 \
+        numpy=2.1 \
+        pandas=2.2 \
+        matplotlib=3.9 \
+        scipy=1.14 \
+        biopython=1.84 \
+        openssl \
+    && /opt/conda/bin/conda clean -afy
 
-# PyPI packages via pip
-RUN python -m pip install --upgrade pip setuptools wheel && \
-    pip install \
-        gget \
-        requests \
-    && pip cache purge
+
+# PyPI packages via pip (Fixed to double equals ==)
+RUN /opt/conda/bin/python -m pip install --upgrade pip setuptools wheel && \
+    /opt/conda/bin/pip install \
+        gget==0.30.2 \
+        requests==2.32.3 \
+    && /opt/conda/bin/pip cache purge
