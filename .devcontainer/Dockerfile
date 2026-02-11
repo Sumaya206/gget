@@ -53,3 +53,6 @@ RUN /opt/conda/bin/python -m pip install --upgrade pip setuptools wheel && \
         gget==0.30.2 \
         requests==2.32.3 \
     && /opt/conda/bin/pip cache purge
+
+# Add gget setup script
+RUN /opt/conda/bin/python -c "import gget; gget.setup('elm')"
