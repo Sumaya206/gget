@@ -12,6 +12,8 @@ The general format looks like this:
 
     python "relative/path/to/script.py" --flag_name value
 
+    ie python "my_modules/ELM_motif_query/modules/ELM_motif_query_automation.py"
+
 You can find the relative path my right clicking on file 'tab' or file in browser on left side, then selecting 'Copy Relative Path'.
 
 Currently, there are no relevant flags that you should add to your command.
