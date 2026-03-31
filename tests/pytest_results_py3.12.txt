@@ -1,268 +1,230 @@
-Pytest results (Python 3.12) - 2026-02-05T16:22:28Z
+Pytest results (Python 3.12) - 2026-03-30T16:27:15Z
 
 ============================= test session starts ==============================
-platform linux -- Python 3.12.12, pytest-9.0.2, pluggy-1.6.0 -- /opt/hostedtoolcache/Python/3.12.12/x64/bin/python
+platform linux -- Python 3.12.13, pytest-9.0.2, pluggy-1.6.0 -- /opt/hostedtoolcache/Python/3.12.13/x64/bin/python
 cachedir: .pytest_cache
 rootdir: /home/runner/work/gget/gget
 configfile: pyproject.toml
-plugins: zarr-3.1.5, fast-array-utils-1.3.1, cov-7.0.0
-collecting ... collected 250 items
+plugins: fast-array-utils-1.4, cov-7.1.0, zarr-3.1.6
+collecting ... collected 263 items
 
 tests/test_8cube.py::TestSpecificity::test_specificity_basic PASSED      [  0%]
 tests/test_8cube.py::TestPsiBlock::test_psi_block_basic PASSED           [  0%]
 tests/test_8cube.py::TestGeneExpression::test_gene_expression_basic PASSED [  1%]
 tests/test_archs4.py::TestArchs4::test_archs4_bad_ensembl PASSED         [  1%]
-tests/test_archs4.py::TestArchs4::test_archs4_bad_gene PASSED            [  2%]
+tests/test_archs4.py::TestArchs4::test_archs4_bad_gene PASSED            [  1%]
 tests/test_archs4.py::TestArchs4::test_archs4_bad_gene_tissue PASSED     [  2%]
 tests/test_archs4.py::TestArchs4::test_archs4_bad_species PASSED         [  2%]
 tests/test_archs4.py::TestArchs4::test_archs4_bad_which PASSED           [  3%]
 tests/test_archs4.py::TestArchs4::test_archs4_defaults PASSED            [  3%]
-tests/test_archs4.py::TestArchs4::test_archs4_mouse_json_ensembl PASSED  [  4%]
+tests/test_archs4.py::TestArchs4::test_archs4_mouse_json_ensembl PASSED  [  3%]
 tests/test_archs4.py::TestArchs4::test_archs4_tissue PASSED              [  4%]
 tests/test_archs4.py::TestArchs4::test_archs4_tissue_ensembl PASSED      [  4%]
-tests/test_archs4.py::TestArchs4::test_archs4_tissue_json PASSED         [  5%]
+tests/test_archs4.py::TestArchs4::test_archs4_tissue_json PASSED         [  4%]
 tests/test_archs4.py::TestArchs4::test_archs4_tissue_mouse PASSED        [  5%]
-tests/test_bgee.py::TestBgee::test_bgee_expression PASSED                [  6%]
+tests/test_bgee.py::TestBgee::test_bgee_expression PASSED                [  5%]
 tests/test_bgee.py::TestBgee::test_bgee_expression_multiple PASSED       [  6%]
 tests/test_bgee.py::TestBgee::test_bgee_orthologs PASSED                 [  6%]
-tests/test_bgee.py::TestBgee::test_error_bgee_expression_no_exist PASSED [  7%]
+tests/test_bgee.py::TestBgee::test_error_bgee_expression_no_exist PASSED [  6%]
 tests/test_bgee.py::TestBgee::test_error_bgee_orthologs_no_exist PASSED  [  7%]
-tests/test_bgee.py::TestBgee::test_error_bgee_unknown_type PASSED        [  8%]
-tests/test_blast.py::TestBlast::test_blast_bad_db1 PASSED                [  8%]
+tests/test_bgee.py::TestBgee::test_error_bgee_unknown_type PASSED        [  7%]
+tests/test_blast.py::TestBlast::test_blast_bad_db1 PASSED                [  7%]
 tests/test_blast.py::TestBlast::test_blast_bad_db2 PASSED                [  8%]
-tests/test_blast.py::TestBlast::test_blast_bad_fasta PASSED              [  9%]
+tests/test_blast.py::TestBlast::test_blast_bad_fasta PASSED              [  8%]
 tests/test_blast.py::TestBlast::test_blast_bad_program PASSED            [  9%]
-tests/test_blast.py::TestBlast::test_blast_bad_seq PASSED                [ 10%]
-tests/test_blast.py::TestBlast::test_blast_db_missing PASSED             [ 10%]
+tests/test_blast.py::TestBlast::test_blast_bad_seq PASSED                [  9%]
+tests/test_blast.py::TestBlast::test_blast_db_missing PASSED             [  9%]
 tests/test_blast.py::TestBlast::test_blast_nt PASSED                     [ 10%]
-tests/test_blat.py::TestBlat::test_blat_aa PASSED                        [ 11%]
+tests/test_blat.py::TestBlat::test_blat_aa PASSED                        [ 10%]
 tests/test_blat.py::TestBlat::test_blat_aa_RNA PASSED                    [ 11%]
-tests/test_blat.py::TestBlat::test_blat_aa_protein PASSED                [ 12%]
-tests/test_blat.py::TestBlat::test_blat_bad_assembly PASSED              [ 12%]
+tests/test_blat.py::TestBlat::test_blat_aa_protein PASSED                [ 11%]
+tests/test_blat.py::TestBlat::test_blat_bad_assembly PASSED              [ 11%]
 tests/test_blat.py::TestBlat::test_blat_bad_fasta PASSED                 [ 12%]
-tests/test_blat.py::TestBlat::test_blat_bad_fileformat PASSED            [ 13%]
-tests/test_blat.py::TestBlat::test_blat_bad_seqtype PASSED               [ 13%]
-tests/test_blat.py::TestBlat::test_blat_bad_txt PASSED                   [ 14%]
-tests/test_blat.py::TestBlat::test_blat_nt PASSED                        [ 14%]
+tests/test_blat.py::TestBlat::test_blat_bad_fileformat PASSED            [ 12%]
+tests/test_blat.py::TestBlat::test_blat_bad_seqtype PASSED               [ 12%]
+tests/test_blat.py::TestBlat::test_blat_bad_txt PASSED                   [ 13%]
+tests/test_blat.py::TestBlat::test_blat_nt PASSED                        [ 13%]
 tests/test_blat.py::TestBlat::test_blat_nt_DNA PASSED                    [ 14%]
-tests/test_blat.py::TestBlat::test_blat_nt_RNA PASSED                    [ 15%]
-tests/test_blat.py::TestBlat::test_blat_nt_fasta PASSED                  [ 15%]
-tests/test_blat.py::TestBlat::test_blat_nt_json PASSED                   [ 16%]
-tests/test_blat.py::TestBlat::test_blat_nt_protein PASSED                [ 16%]
-tests/test_blat.py::TestBlat::test_blat_nt_transDNA PASSED               [ 16%]
-tests/test_blat.py::TestBlat::test_blat_nt_txt PASSED                    [ 17%]
-tests/test_blat.py::TestBlat::test_blat_shortseq PASSED                  [ 17%]
-tests/test_cbio.py::TestCbioSearch::test_cbio_search FAILED              [ 18%]
-tests/test_cbio.py::TestCbio::test_cbio_download PASSED                  [ 18%]
-tests/test_cbio.py::TestCbio::test_cbio_download_partially_existing_files PASSED [ 18%]
-tests/test_cbio.py::TestCbio::test_error_cbio_download PASSED            [ 19%]
-tests/test_cellxgene.py::TestCellxgene::test_cellxgene_adata PASSED      [ 19%]
-tests/test_cellxgene.py::TestCellxgene::test_cellxgene_metadata PASSED   [ 20%]
-tests/test_compile.py::TestCompilerWindows::test_compiler_windows PASSED [ 20%]
-tests/test_cosmic.py::TestCosmicWorkflow::test_cosmic_defaults PASSED    [ 20%]
-tests/test_diamond.py::TestDiamond::test_diamond_JSON_out PASSED         [ 21%]
-tests/test_diamond.py::TestDiamond::test_diamond_both_files PASSED       [ 21%]
-tests/test_diamond.py::TestDiamond::test_diamond_query_file PASSED       [ 22%]
-tests/test_diamond.py::TestDiamond::test_diamond_ref_file PASSED         [ 22%]
-tests/test_diamond.py::TestDiamond::test_diamond_seqs_multiple PASSED    [ 22%]
-tests/test_diamond.py::TestDiamond::test_diamond_seqs_single PASSED      [ 23%]
-tests/test_elm.py::TestELM::test_elm_uniprot_aminoacidseq PASSED         [ 23%]
-tests/test_elm.py::TestELM::test_elm_uniprot_id_in_elm PASSED            [ 24%]
-tests/test_elm.py::TestELM::test_elm_uniprot_id_new PASSED               [ 24%]
-tests/test_enrichr.py::TestEnrichr::test_enrichr_background PASSED       [ 24%]
-tests/test_enrichr.py::TestEnrichr::test_enrichr_background_ensembl PASSED [ 25%]
-tests/test_enrichr.py::TestEnrichr::test_enrichr_bad_background PASSED   [ 25%]
-tests/test_enrichr.py::TestEnrichr::test_enrichr_bad_background_list PASSED [ 26%]
-tests/test_enrichr.py::TestEnrichr::test_enrichr_bad_database_shortcut PASSED [ 26%]
-tests/test_enrichr.py::TestEnrichr::test_enrichr_bad_gene PASSED         [ 26%]
-tests/test_enrichr.py::TestEnrichr::test_enrichr_bad_species PASSED      [ 27%]
-tests/test_enrichr.py::TestEnrichr::test_enrichr_celltypes PASSED        [ 27%]
-tests/test_enrichr.py::TestEnrichr::test_enrichr_diseases_drugs PASSED   [ 28%]
-tests/test_enrichr.py::TestEnrichr::test_enrichr_ensembl_ids PASSED      [ 28%]
-tests/test_enrichr.py::TestEnrichr::test_enrichr_fish PASSED             [ 28%]
-tests/test_enrichr.py::TestEnrichr::test_enrichr_fly PASSED              [ 29%]
-tests/test_enrichr.py::TestEnrichr::test_enrichr_json PASSED             [ 29%]
-tests/test_enrichr.py::TestEnrichr::test_enrichr_kinase_interactions PASSED [ 30%]
-tests/test_enrichr.py::TestEnrichr::test_enrichr_mouse_is_human PASSED   [ 30%]
-tests/test_enrichr.py::TestEnrichr::test_enrichr_none PASSED             [ 30%]
-tests/test_enrichr.py::TestEnrichr::test_enrichr_ontology PASSED         [ 31%]
-tests/test_enrichr.py::TestEnrichr::test_enrichr_pathway PASSED          [ 31%]
-tests/test_enrichr.py::TestEnrichr::test_enrichr_plot PASSED             [ 32%]
-tests/test_enrichr.py::TestEnrichr::test_enrichr_transcription PASSED    [ 32%]
-tests/test_enrichr.py::TestEnrichr::test_enrichr_worm PASSED             [ 32%]
-tests/test_enrichr.py::TestEnrichr::test_enrichr_yeast PASSED            [ 33%]
-tests/test_gpt.py::TestGpt::test_gpt PASSED                              [ 33%]
-tests/test_info.py::TestInfo::test_info_WB_transcript PASSED             [ 34%]
-tests/test_info.py::TestInfo::test_info_exon PASSED                      [ 34%]
-tests/test_info.py::TestInfo::test_info_gene PASSED                      [ 34%]
-tests/test_info.py::TestInfo::test_info_gene_list_non_model PASSED       [ 35%]
-tests/test_info.py::TestInfo::test_info_mix PASSED                       [ 35%]
-tests/test_info.py::TestInfo::test_info_ncbifalse_uniprotfalse PASSED    [ 36%]
-tests/test_info.py::TestInfo::test_info_ncbifalse_uniprottrue PASSED     [ 36%]
-tests/test_info.py::TestInfo::test_info_ncbitrue_uniprotfalse PASSED     [ 36%]
-tests/test_info.py::TestInfo::test_info_transcript PASSED                [ 37%]
-tests/test_muscle.py::TestMuscle::test_muscle_nt PASSED                  [ 37%]
-tests/test_muscle.py::TestMuscle::test_muscle_nt_txt PASSED              [ 38%]
-tests/test_muscle.py::TestMuscleSuper::test_muscle_nt_super5 PASSED      [ 38%]
-tests/test_muscle.py::TestMuscleAA::test_muscle_aa PASSED                [ 38%]
-tests/test_muscle.py::TestMuscleSeqsInput::test_muscle_seqs_as_input PASSED [ 39%]
-tests/test_muscle.py::TestMuscleAASuper::test_muscle_aa_super5 PASSED    [ 39%]
-tests/test_muscle.py::TestMusclePrints::test_muscle_print_nt PASSED      [ 40%]
-tests/test_mutate.py::TestMutate::test_ambiguous_mutation PASSED         [ 40%]
-tests/test_mutate.py::TestMutate::test_index_error PASSED                [ 40%]
-tests/test_mutate.py::TestMutate::test_intron_mutation_minus PASSED      [ 41%]
-tests/test_mutate.py::TestMutate::test_intron_mutation_plus PASSED       [ 41%]
-tests/test_mutate.py::TestMutate::test_inversion_with_overlaps PASSED    [ 42%]
-tests/test_mutate.py::TestMutate::test_large_k PASSED                    [ 42%]
-tests/test_mutate.py::TestMutate::test_list_of_mutations PASSED          [ 42%]
-tests/test_mutate.py::TestMutate::test_multi_deletion PASSED             [ 43%]
-tests/test_mutate.py::TestMutate::test_multi_deletion_with_right_repeats PASSED [ 43%]
-tests/test_mutate.py::TestMutate::test_multi_delins PASSED               [ 44%]
-tests/test_mutate.py::TestMutate::test_multi_delins_with_psuedo_left_repeats PASSED [ 44%]
-tests/test_mutate.py::TestMutate::test_multi_delins_with_true_left_repeats PASSED [ 44%]
-tests/test_mutate.py::TestMutate::test_multi_delins_with_true_right_repeats PASSED [ 45%]
-tests/test_mutate.py::TestMutate::test_multi_dup PASSED                  [ 45%]
-tests/test_mutate.py::TestMutate::test_multi_insertion PASSED            [ 46%]
-tests/test_mutate.py::TestMutate::test_multi_insertion_with_left_repeats PASSED [ 46%]
-tests/test_mutate.py::TestMutate::test_posttranslational_mutation PASSED [ 46%]
-tests/test_mutate.py::TestMutate::test_single_deletion PASSED            [ 47%]
-tests/test_mutate.py::TestMutate::test_single_deletion_with_left_repeats PASSED [ 47%]
-tests/test_mutate.py::TestMutate::test_single_deletion_with_right_repeats PASSED [ 48%]
-tests/test_mutate.py::TestMutate::test_single_delins PASSED              [ 48%]
-tests/test_mutate.py::TestMutate::test_single_dup PASSED                 [ 48%]
-tests/test_mutate.py::TestMutate::test_single_insertion PASSED           [ 49%]
-tests/test_mutate.py::TestMutate::test_single_substitution PASSED        [ 49%]
-tests/test_mutate.py::TestMutate::test_single_substitution_near_left_end PASSED [ 50%]
-tests/test_mutate.py::TestMutate::test_single_substitution_near_right_end PASSED [ 50%]
-tests/test_mutate.py::TestMutate::test_uncertain_mutation PASSED         [ 50%]
-tests/test_mutate.py::test_csv_of_mutations PASSED                       [ 51%]
-tests/test_mutate.py::test_mismatch_error PASSED                         [ 51%]
-tests/test_opentargets.py::TestOpenTargets::test_error_opentargets_bad_limit PASSED [ 52%]
-tests/test_opentargets.py::TestOpenTargets::test_error_opentargets_bad_resource PASSED [ 52%]
-tests/test_opentargets.py::TestOpenTargets::test_error_opentargets_diseases_filter PASSED [ 52%]
-tests/test_opentargets.py::TestOpenTargets::test_error_opentargets_drugs_invalid_filter PASSED [ 53%]
-tests/test_opentargets.py::TestOpenTargets::test_error_opentargets_nonexistent_id PASSED [ 53%]
-tests/test_opentargets.py::TestOpenTargets::test_error_opentargets_tractability_limit PASSED [ 54%]
-tests/test_opentargets.py::TestOpenTargets::test_opentargets PASSED      [ 54%]
-tests/test_opentargets.py::TestOpenTargets::test_opentargets_depmap PASSED [ 54%]
-tests/test_opentargets.py::TestOpenTargets::test_opentargets_depmap_filter PASSED [ 55%]
-tests/test_opentargets.py::TestOpenTargets::test_opentargets_drugs PASSED [ 55%]
-tests/test_opentargets.py::TestOpenTargets::test_opentargets_drugs_no_limit PASSED [ 56%]
-tests/test_opentargets.py::TestOpenTargets::test_opentargets_expression_no_limit PASSED [ 56%]
-tests/test_opentargets.py::TestOpenTargets::test_opentargets_interactions_no_limit PASSED [ 56%]
-tests/test_opentargets.py::TestOpenTargets::test_opentargets_interactions_simple_filter PASSED [ 57%]
-tests/test_opentargets.py::TestOpenTargets::test_opentargets_no_limit PASSED [ 57%]
-tests/test_opentargets.py::TestOpenTargets::test_opentargets_no_limit_accurate_coverage PASSED [ 58%]
-tests/test_opentargets.py::TestOpenTargets::test_opentargets_pharmacogenetics_filter_or PASSED [ 58%]
-tests/test_opentargets.py::TestOpenTargets::test_opentargets_pharmacogenetics_no_limit PASSED [ 58%]
-tests/test_opentargets.py::TestOpenTargets::test_opentargets_tractability PASSED [ 59%]
-tests/test_pdb.py::TestPDB::test_pdb_assembly FAILED                     [ 59%]
-tests/test_pdb.py::TestPDB::test_pdb_pdb PASSED                          [ 60%]
-tests/test_ref.py::TestRef::test_ref PASSED                              [ 60%]
-tests/test_ref.py::TestRef::test_ref_bad_rel PASSED                      [ 60%]
-tests/test_ref.py::TestRef::test_ref_bad_species PASSED                  [ 61%]
-tests/test_ref.py::TestRef::test_ref_bad_which PASSED                    [ 61%]
-tests/test_ref.py::TestRef::test_ref_ftp PASSED                          [ 62%]
-tests/test_ref.py::TestRef::test_ref_list PASSED                         [ 62%]
-tests/test_ref.py::TestRef::test_ref_plant PASSED                        [ 62%]
-tests/test_ref.py::TestRef::test_ref_rel PASSED                          [ 63%]
-tests/test_ref.py::TestRef::test_ref_rel_ftp PASSED                      [ 63%]
-tests/test_ref.py::TestRef::test_ref_rel_ftp_octopus PASSED              [ 64%]
-tests/test_ref.py::TestRef::test_ref_rel_protist PASSED                  [ 64%]
-tests/test_ref.py::TestRef::test_ref_which PASSED                        [ 64%]
-tests/test_ref.py::TestRef::test_ref_which_plant PASSED                  [ 65%]
-tests/test_search.py::TestSearch::test_search_db PASSED                  [ 65%]
-tests/test_search.py::TestSearch::test_search_gene_bad_andor PASSED      [ 66%]
-tests/test_search.py::TestSearch::test_search_gene_bad_species PASSED    [ 66%]
-tests/test_search.py::TestSearch::test_search_gene_one_sw PASSED         [ 66%]
-tests/test_search.py::TestSearch::test_search_gene_one_sw_json PASSED    [ 67%]
-tests/test_search.py::TestSearch::test_search_gene_one_sw_limit PASSED   [ 67%]
-tests/test_search.py::TestSearch::test_search_gene_two_sw_and PASSED     [ 68%]
-tests/test_search.py::TestSearch::test_search_gene_two_sw_limit PASSED   [ 68%]
-tests/test_search.py::TestSearch::test_search_gene_two_sw_or PASSED      [ 68%]
-tests/test_search.py::TestSearch::test_search_octopus PASSED             [ 69%]
-tests/test_search.py::TestSearch::test_search_plant PASSED               [ 69%]
-tests/test_search.py::TestSearch::test_search_plant_db PASSED            [ 70%]
-tests/test_search.py::TestSearch::test_search_release PASSED             [ 70%]
-tests/test_search.py::TestSearch::test_search_transcript_bad_andor PASSED [ 70%]
-tests/test_search.py::TestSearch::test_search_transcript_bad_species PASSED [ 71%]
-tests/test_search.py::TestSearch::test_search_transcript_one_sw PASSED   [ 71%]
-tests/test_search.py::TestSearch::test_search_transcript_two_sw_and PASSED [ 72%]
-tests/test_search.py::TestSearch::test_search_transcript_two_sw_or PASSED [ 72%]
-tests/test_seq.py::TestSeq::test_seq_gene PASSED                         [ 72%]
-tests/test_seq.py::TestSeq::test_seq_gene_iso PASSED                     [ 73%]
-tests/test_seq.py::TestSeq::test_seq_gene_transcript_iso PASSED          [ 73%]
-tests/test_seq.py::TestSeq::test_seq_missing_uniprot_gene_name PASSED    [ 74%]
-tests/test_seq.py::TestSeq::test_seq_transcript PASSED                   [ 74%]
-tests/test_seq.py::TestSeq::test_seq_transcript_gene PASSED              [ 74%]
-tests/test_seq.py::TestSeq::test_seq_transcript_gene_WB PASSED           [ 75%]
-tests/test_seq.py::TestSeq::test_seq_transcript_gene_iso PASSED          [ 75%]
-tests/test_seq.py::TestSeq::test_seq_transcript_transcript_WB PASSED     [ 76%]
-tests/test_seq.py::TestSeq::test_seq_transcript_transcript_iso PASSED    [ 76%]
-tests/test_utils.py::TestUtils::test_aa_colors PASSED                    [ 76%]
-tests/test_utils.py::TestUtils::test_find_latest_ens_rel PASSED          [ 77%]
-tests/test_utils.py::TestUtils::test_get_uniprot_info_gene PASSED        [ 77%]
-tests/test_utils.py::TestUtils::test_get_uniprot_info_transcript PASSED  [ 78%]
-tests/test_utils.py::TestUtils::test_get_uniprot_seqs PASSED             [ 78%]
-tests/test_utils.py::TestUtils::test_n_colors PASSED                     [ 78%]
-tests/test_utils.py::TestUtils::test_read_fasta PASSED                   [ 79%]
-tests/test_utils.py::TestUtils::test_ref_iv_species_options PASSED       [ 79%]
-tests/test_utils.py::TestUtils::test_ref_species_options PASSED          [ 80%]
-tests/test_utils.py::TestUtils::test_ref_species_options_bad_type PASSED [ 80%]
-tests/test_utils.py::TestUtils::test_rest_query PASSED                   [ 80%]
-tests/test_utils.py::TestUtils::test_rest_query_bad_type PASSED          [ 81%]
-tests/test_utils.py::TestUtils::test_search_iv_species_options PASSED    [ 81%]
-tests/test_utils.py::TestUtils::test_search_species_options PASSED       [ 82%]
-tests/test_utils.py::TestUtils::test_search_species_options_bad_type PASSED [ 82%]
-tests/test_virus.py::TestVirus::test_datasets_cli_version_output PASSED  [ 82%]
-tests/test_virus.py::TestVirus::test_get_datasets_path_returns_valid_path PASSED [ 83%]
-tests/test_virus.py::TestVirus::test_get_datasets_path_uses_bundled_binary PASSED [ 83%]
-tests/test_virus.py::TestVirus::test_virus_completeness_filter_verification PASSED [ 84%]
-tests/test_virus.py::TestVirus::test_virus_empty_virus_name PASSED       [ 84%]
-tests/test_virus.py::TestVirus::test_virus_host_filter_verification PASSED [ 84%]
-tests/test_virus.py::TestVirus::test_virus_integer_virus_id PASSED       [ 85%]
-tests/test_virus.py::TestVirus::test_virus_invalid_annotated_type PASSED [ 85%]
-tests/test_virus.py::TestVirus::test_virus_invalid_completeness PASSED   [ 86%]
-tests/test_virus.py::TestVirus::test_virus_invalid_genbank_batch_size_negative PASSED [ 86%]
-tests/test_virus.py::TestVirus::test_virus_invalid_genbank_batch_size_type PASSED [ 86%]
-tests/test_virus.py::TestVirus::test_virus_invalid_genbank_batch_size_zero PASSED [ 87%]
-tests/test_virus.py::TestVirus::test_virus_invalid_genbank_metadata_type PASSED [ 87%]
-tests/test_virus.py::TestVirus::test_virus_invalid_is_accession_type PASSED [ 88%]
-tests/test_virus.py::TestVirus::test_virus_invalid_keep_temp_type PASSED [ 88%]
-tests/test_virus.py::TestVirus::test_virus_invalid_lab_passaged_type PASSED [ 88%]
-tests/test_virus.py::TestVirus::test_virus_invalid_proteins_complete_type PASSED [ 89%]
-tests/test_virus.py::TestVirus::test_virus_invalid_refseq_only_type PASSED [ 89%]
-tests/test_virus.py::TestVirus::test_virus_metadata_schema_validation PASSED [ 90%]
-tests/test_virus.py::TestVirus::test_virus_min_greater_than_max_collection_date PASSED [ 90%]
-tests/test_virus.py::TestVirus::test_virus_min_greater_than_max_gene_count PASSED [ 90%]
-tests/test_virus.py::TestVirus::test_virus_min_greater_than_max_peptide_count PASSED [ 91%]
-tests/test_virus.py::TestVirus::test_virus_min_greater_than_max_protein_count PASSED [ 91%]
-tests/test_virus.py::TestVirus::test_virus_min_greater_than_max_release_date PASSED [ 92%]
-tests/test_virus.py::TestVirus::test_virus_min_greater_than_max_seq_length PASSED [ 92%]
-tests/test_virus.py::TestVirus::test_virus_multiple_filters_relationship_check PASSED [ 92%]
-tests/test_virus.py::TestVirus::test_virus_none_virus_name PASSED        [ 93%]
-tests/test_virus.py::TestVirus::test_virus_relationship_check_counts_match PASSED [ 93%]
-tests/test_virus.py::TestVirus::test_virus_release_date_filter_verification PASSED [ 94%]
-tests/test_virus.py::TestVirus::test_virus_specific_accession_file_creation PASSED [ 94%]
-tests/test_virus.py::TestVirus::test_virus_with_annotated_filter PASSED  [ 94%]
-tests/test_virus.py::TestVirus::test_virus_with_collection_date_filters PASSED [ 95%]
-tests/test_virus.py::TestVirus::test_virus_with_completeness_filter PASSED [ 95%]
-tests/test_virus.py::TestVirus::test_virus_with_genbank_metadata_retrieval PASSED [ 96%]
-tests/test_virus.py::TestVirus::test_virus_with_geographic_location_filter PASSED [ 96%]
-tests/test_virus.py::TestVirus::test_virus_with_has_proteins_filter PASSED [ 96%]
-tests/test_virus.py::TestVirus::test_virus_with_host_filter PASSED       [ 97%]
-tests/test_virus.py::TestVirus::test_virus_with_lab_passaged_filter PASSED [ 97%]
-tests/test_virus.py::TestVirus::test_virus_with_length_filters PASSED    [ 98%]
-tests/test_virus.py::TestVirus::test_virus_with_max_ambiguous_chars_filter PASSED [ 98%]
-tests/test_virus.py::TestVirus::test_virus_with_multiple_filters PASSED  [ 98%]
-tests/test_virus.py::TestVirus::test_virus_with_protein_count_filters PASSED [ 99%]
-tests/test_virus.py::TestVirus::test_virus_with_refseq_filter PASSED     [ 99%]
-tests/test_virus.py::TestVirus::test_virus_with_source_database_filter PASSED [100%]
+tests/test_blat.py::TestBlat::test_blat_nt_RNA PASSED                    [ 14%]
+tests/test_blat.py::TestBlat::test_blat_nt_fasta PASSED                  [ 14%]
+tests/test_blat.py::TestBlat::test_blat_nt_json PASSED                   [ 15%]
+tests/test_blat.py::TestBlat::test_blat_nt_protein PASSED                [ 15%]
+tests/test_blat.py::TestBlat::test_blat_nt_transDNA PASSED               [ 15%]
+tests/test_blat.py::TestBlat::test_blat_nt_txt PASSED                    [ 16%]
+tests/test_blat.py::TestBlat::test_blat_shortseq PASSED                  [ 16%]
+tests/test_cbio.py::TestCbioSearch::test_cbio_search PASSED              [ 17%]
+tests/test_cbio.py::TestCbio::test_cbio_download PASSED                  [ 17%]
+tests/test_cbio.py::TestCbio::test_cbio_download_partially_existing_files PASSED [ 17%]
+tests/test_cbio.py::TestCbio::test_error_cbio_download PASSED            [ 18%]
+tests/test_cellxgene.py::TestCellxgene::test_cellxgene_adata PASSED      [ 18%]
+tests/test_cellxgene.py::TestCellxgene::test_cellxgene_metadata PASSED   [ 19%]
+tests/test_compile.py::TestCompilerWindows::test_compiler_windows PASSED [ 19%]
+tests/test_cosmic.py::TestCosmicWorkflow::test_cosmic_defaults PASSED    [ 19%]
+tests/test_diamond.py::TestDiamond::test_diamond_JSON_out PASSED         [ 20%]
+tests/test_diamond.py::TestDiamond::test_diamond_both_files PASSED       [ 20%]
+tests/test_diamond.py::TestDiamond::test_diamond_query_file PASSED       [ 20%]
+tests/test_diamond.py::TestDiamond::test_diamond_ref_file PASSED         [ 21%]
+tests/test_diamond.py::TestDiamond::test_diamond_seqs_multiple PASSED    [ 21%]
+tests/test_diamond.py::TestDiamond::test_diamond_seqs_single PASSED      [ 22%]
+tests/test_elm.py::TestELM::test_elm_uniprot_aminoacidseq PASSED         [ 22%]
+tests/test_elm.py::TestELM::test_elm_uniprot_id_in_elm PASSED            [ 22%]
+tests/test_elm.py::TestELM::test_elm_uniprot_id_new PASSED               [ 23%]
+tests/test_enrichr.py::TestEnrichr::test_enrichr_background PASSED       [ 23%]
+tests/test_enrichr.py::TestEnrichr::test_enrichr_background_ensembl PASSED [ 23%]
+tests/test_enrichr.py::TestEnrichr::test_enrichr_bad_background PASSED   [ 24%]
+tests/test_enrichr.py::TestEnrichr::test_enrichr_bad_background_list PASSED [ 24%]
+tests/test_enrichr.py::TestEnrichr::test_enrichr_bad_database_shortcut PASSED [ 25%]
+tests/test_enrichr.py::TestEnrichr::test_enrichr_bad_gene PASSED         [ 25%]
+tests/test_enrichr.py::TestEnrichr::test_enrichr_bad_species PASSED      [ 25%]
+tests/test_enrichr.py::TestEnrichr::test_enrichr_celltypes PASSED        [ 26%]
+tests/test_enrichr.py::TestEnrichr::test_enrichr_diseases_drugs PASSED   [ 26%]
+tests/test_enrichr.py::TestEnrichr::test_enrichr_ensembl_ids PASSED      [ 26%]
+tests/test_enrichr.py::TestEnrichr::test_enrichr_fish PASSED             [ 27%]
+tests/test_enrichr.py::TestEnrichr::test_enrichr_fly PASSED              [ 27%]
+tests/test_enrichr.py::TestEnrichr::test_enrichr_json PASSED             [ 28%]
+tests/test_enrichr.py::TestEnrichr::test_enrichr_kinase_interactions PASSED [ 28%]
+tests/test_enrichr.py::TestEnrichr::test_enrichr_mouse_is_human PASSED   [ 28%]
+tests/test_enrichr.py::TestEnrichr::test_enrichr_none PASSED             [ 29%]
+tests/test_enrichr.py::TestEnrichr::test_enrichr_ontology PASSED         [ 29%]
+tests/test_enrichr.py::TestEnrichr::test_enrichr_pathway PASSED          [ 30%]
+tests/test_enrichr.py::TestEnrichr::test_enrichr_plot PASSED             [ 30%]
+tests/test_enrichr.py::TestEnrichr::test_enrichr_transcription PASSED    [ 30%]
+tests/test_enrichr.py::TestEnrichr::test_enrichr_worm PASSED             [ 31%]
+tests/test_enrichr.py::TestEnrichr::test_enrichr_yeast PASSED            [ 31%]
+tests/test_gpt.py::TestGpt::test_gpt PASSED                              [ 31%]
+tests/test_info.py::TestInfo::test_info_WB_transcript PASSED             [ 32%]
+tests/test_info.py::TestInfo::test_info_exon PASSED                      [ 32%]
+tests/test_info.py::TestInfo::test_info_gene PASSED                      [ 33%]
+tests/test_info.py::TestInfo::test_info_gene_list_non_model PASSED       [ 33%]
+tests/test_info.py::TestInfo::test_info_mix PASSED                       [ 33%]
+tests/test_info.py::TestInfo::test_info_ncbifalse_uniprotfalse PASSED    [ 34%]
+tests/test_info.py::TestInfo::test_info_ncbifalse_uniprottrue PASSED     [ 34%]
+tests/test_info.py::TestInfo::test_info_ncbitrue_uniprotfalse PASSED     [ 34%]
+tests/test_info.py::TestInfo::test_info_transcript PASSED                [ 35%]
+tests/test_muscle.py::TestMuscle::test_muscle_nt PASSED                  [ 35%]
+tests/test_muscle.py::TestMuscle::test_muscle_nt_txt PASSED              [ 36%]
+tests/test_muscle.py::TestMuscleSuper::test_muscle_nt_super5 PASSED      [ 36%]
+tests/test_muscle.py::TestMuscleAA::test_muscle_aa PASSED                [ 36%]
+tests/test_muscle.py::TestMuscleSeqsInput::test_muscle_seqs_as_input PASSED [ 37%]
+tests/test_muscle.py::TestMuscleAASuper::test_muscle_aa_super5 PASSED    [ 37%]
+tests/test_muscle.py::TestMusclePrints::test_muscle_print_nt PASSED      [ 38%]
+tests/test_mutate.py::TestMutate::test_ambiguous_mutation PASSED         [ 38%]
+tests/test_mutate.py::TestMutate::test_index_error PASSED                [ 38%]
+tests/test_mutate.py::TestMutate::test_intron_mutation_minus PASSED      [ 39%]
+tests/test_mutate.py::TestMutate::test_intron_mutation_plus PASSED       [ 39%]
+tests/test_mutate.py::TestMutate::test_inversion_with_overlaps PASSED    [ 39%]
+tests/test_mutate.py::TestMutate::test_large_k PASSED                    [ 40%]
+tests/test_mutate.py::TestMutate::test_list_of_mutations PASSED          [ 40%]
+tests/test_mutate.py::TestMutate::test_multi_deletion PASSED             [ 41%]
+tests/test_mutate.py::TestMutate::test_multi_deletion_with_right_repeats PASSED [ 41%]
+tests/test_mutate.py::TestMutate::test_multi_delins PASSED               [ 41%]
+tests/test_mutate.py::TestMutate::test_multi_delins_with_psuedo_left_repeats PASSED [ 42%]
+tests/test_mutate.py::TestMutate::test_multi_delins_with_true_left_repeats PASSED [ 42%]
+tests/test_mutate.py::TestMutate::test_multi_delins_with_true_right_repeats PASSED [ 42%]
+tests/test_mutate.py::TestMutate::test_multi_dup PASSED                  [ 43%]
+tests/test_mutate.py::TestMutate::test_multi_insertion PASSED            [ 43%]
+tests/test_mutate.py::TestMutate::test_multi_insertion_with_left_repeats PASSED [ 44%]
+tests/test_mutate.py::TestMutate::test_posttranslational_mutation PASSED [ 44%]
+tests/test_mutate.py::TestMutate::test_single_deletion PASSED            [ 44%]
+tests/test_mutate.py::TestMutate::test_single_deletion_with_left_repeats PASSED [ 45%]
+tests/test_mutate.py::TestMutate::test_single_deletion_with_right_repeats PASSED [ 45%]
+tests/test_mutate.py::TestMutate::test_single_delins PASSED              [ 46%]
+tests/test_mutate.py::TestMutate::test_single_dup PASSED                 [ 46%]
+tests/test_mutate.py::TestMutate::test_single_insertion PASSED           [ 46%]
+tests/test_mutate.py::TestMutate::test_single_substitution PASSED        [ 47%]
+tests/test_mutate.py::TestMutate::test_single_substitution_near_left_end PASSED [ 47%]
+tests/test_mutate.py::TestMutate::test_single_substitution_near_right_end PASSED [ 47%]
+tests/test_mutate.py::TestMutate::test_uncertain_mutation PASSED         [ 48%]
+tests/test_mutate.py::test_csv_of_mutations PASSED                       [ 48%]
+tests/test_mutate.py::test_mismatch_error PASSED                         [ 49%]
+tests/test_opentargets.py::TestOpenTargets::test_error_opentargets_bad_limit PASSED [ 49%]
+tests/test_opentargets.py::TestOpenTargets::test_error_opentargets_bad_resource PASSED [ 49%]
+tests/test_opentargets.py::TestOpenTargets::test_error_opentargets_diseases_filter PASSED [ 50%]
+tests/test_opentargets.py::TestOpenTargets::test_error_opentargets_drugs_invalid_filter PASSED [ 50%]
+tests/test_opentargets.py::TestOpenTargets::test_error_opentargets_nonexistent_id PASSED [ 50%]
+tests/test_opentargets.py::TestOpenTargets::test_error_opentargets_tractability_limit PASSED [ 51%]
+tests/test_opentargets.py::TestOpenTargets::test_opentargets FAILED      [ 51%]
+tests/test_opentargets.py::TestOpenTargets::test_opentargets_depmap FAILED [ 52%]
+tests/test_opentargets.py::TestOpenTargets::test_opentargets_depmap_filter PASSED [ 52%]
+tests/test_opentargets.py::TestOpenTargets::test_opentargets_drugs FAILED [ 52%]
+tests/test_opentargets.py::TestOpenTargets::test_opentargets_drugs_no_limit FAILED [ 53%]
+tests/test_opentargets.py::TestOpenTargets::test_opentargets_expression_no_limit FAILED [ 53%]
 
 =================================== FAILURES ===================================
-_______________________ TestCbioSearch.test_cbio_search ________________________
+_______________________ TestOpenTargets.test_opentargets _______________________
 
-self = <tests.test_cbio.TestCbioSearch testMethod=test_cbio_search>
+self = <tests.test_opentargets.TestOpenTargets testMethod=test_opentargets>
+
+    def assert_equal(self: unittest.TestCase):
+        test = name
+        expected_result = td[test]["expected_result"]
+        result_to_test = do_call(func, td[test]["args"])
+        if test == "test_cosmic_defaults":  # special case for cosmic
+            import numpy as np
+            expected_result = pd.DataFrame(expected_result[0])
+            expected_result = expected_result.replace({None: np.nan})
+            # result_to_test.equals(expected_result)
+            pd.testing.assert_frame_equal(result_to_test, expected_result)
+            return
+    
+        # If result is a DataFrame, convert to list
+        if isinstance(result_to_test, pd.DataFrame):
+            result_to_test = result_to_test.dropna(axis=1).values.tolist()
+    
+>       self.assertEqual(result_to_test, expected_result)
+E       AssertionError: Lists differ: [['EF[171 chars]', 0.7297489019498119], ['MONDO_0004979', 'ast[535 chars]653]] != [['EF[171 chars]', 0.6908981975876463], ['MONDO_0004979', 'ast[535 chars]614]]
+E       
+E       First differing element 0:
+E       ['EFO[129 chars] occurs during the first 2 years of life.', 0.7297489019498119]
+E       ['EFO[129 chars] occurs during the first 2 years of life.', 0.6908981975876463]
+E       
+E         [['EFO_0000274',
+E           'atopic eczema',
+E           'A common chronic pruritic inflammatory skin disease with a strong genetic '
+E           'component. Onset typically occurs during the first 2 years of life.',
+E       -   0.7297489019498119],
+E       +   0.6908981975876463],
+E          ['MONDO_0004979',
+E           'asthma',
+E           'A bronchial disease that is characterized by chronic inflammation and '
+E           'narrowing of the airways, which is caused by a combination of environmental '
+E           'and genetic factors resulting in recurring periods of wheezing (a whistling '
+E           'sound while breathing), chest tightness, shortness of breath, mucus '
+E           'production and coughing. The symptoms appear due to a variety of triggers '
+E           'such as allergens, irritants, respiratory infections, weather changes, '
+E           'exercise, stress, reflux disease, medications, foods and emotional anxiety.',
+E       -   0.6642728577751653]]
+E       +   0.6506508395200614]]
+
+tests/from_json.py:78: AssertionError
+------------------------------ Captured log call -------------------------------
+INFO     gget.utils:gget_opentargets.py:345 Retrieved 2/1367 associated diseases.
+___________________ TestOpenTargets.test_opentargets_depmap ____________________
+
+self = <tests.test_opentargets.TestOpenTargets testMethod=test_opentargets_depmap>
+
+    def assert_equal_json_hash(self: unittest.TestCase):
+        test = name
+        expected_result = td[test]["expected_result"]
+        result_to_test = do_call(func, td[test]["args"])
+        # If result is a DataFrame, convert to list
+        if isinstance(result_to_test, pd.DataFrame):
+            result_to_test = result_to_test.dropna(axis=1).values.tolist()
+    
+        result_to_test = json.dumps(result_to_test)
+        result_to_test = hashlib.md5(result_to_test.encode()).hexdigest()
+    
+>       self.assertEqual(result_to_test, expected_result)
+E       AssertionError: '4c550571d29a7e0136e12e2fa9297655' != '4c0393626ee958f860d4c1fd0b6b77ee'
+E       - 4c550571d29a7e0136e12e2fa9297655
+E       + 4c0393626ee958f860d4c1fd0b6b77ee
+
+tests/from_json.py:125: AssertionError
+------------------------------ Captured log call -------------------------------
+INFO     gget.utils:gget_opentargets.py:345 Retrieved 29/29 DepMap entries.
+____________________ TestOpenTargets.test_opentargets_drugs ____________________
+
+self = <tests.test_opentargets.TestOpenTargets testMethod=test_opentargets_drugs>
 
     def assert_equal(self: unittest.TestCase):
         test = name
@@ -273,8 +235,8 @@ self = <tests.test_cbio.TestCbioSearch testMethod=test_cbio_search>
 tests/from_json.py:65: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-func = <function cbio_search at 0x7f3bb31f59e0>
-args = {'key_words': ['esophag', 'ovary', 'ovarian']}
+func = <function opentargets at 0x7f99e5818cc0>
+args = {'ensembl_id': 'ENSG00000169194', 'limit': 2, 'resource': 'drugs'}
 
     def do_call(func, args):
         if isinstance(args, dict):
@@ -284,278 +246,409 @@ args = {'key_words': ['esophag', 'ovary', 'ovarian']}
 tests/from_json.py:57: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-key_words = ['esophag', 'ovary', 'ovarian']
+ensembl_id = 'ENSG00000169194', resource = 'drugs', limit = 2, verbose = True
+wrap_text = False, filters = None, filter_mode = 'and', json = False
 
-    def cbio_search(key_words):
+    def opentargets(
+        ensembl_id,
+        resource="diseases",
+        limit=None,
+        verbose=True,
+        wrap_text=False,
+        filters=None,
+        filter_mode="and",
+        json=False,
+    ):
         """
-        Find cBioPortal study IDs by keyword.
+        Query OpenTargets for data associated with a given Ensembl gene ID.
     
         Args:
-        key_words           list of keywords to search for - use tissues related to tissue or cancer type of interest (e.g., esophag, ovarian, etc)
     
-        Return:
+        - ensembl_id    Ensembl gene ID to be queried (str), e.g. "ENSG00000169194".
+        - resource      Defines type of information to be returned.
+                        "diseases":         Returns diseases associated with the gene (default).
+                        "drugs":            Returns drugs associated with the gene.
+                        "tractability":     Returns tractability data for the gene.
+                        "pharmacogenetics": Returns pharmacogenetics data for the gene.
+                        "expression":       Returns gene expression data (by tissues, organs, and anatomical systems).
+                        "depmap":           Returns DepMap gene-disease effect data for the gene.
+                        "interactions":     Returns protein-protein interactions for the gene.
+        - limit         Limit the number of results returned (default: No limit).
+                        Note: Not compatible with the 'tractability' and 'depmap' resources.
+        - verbose       Print progress messages (default: True).
+        - wrap_text     If True, displays data frame with wrapped text for easy reading. Default: False.
+        - filters       Filters to apply to the data. Supported filters by resource:
+                        "diseases": None
+                        "drugs": disease_id (e.g. "EFO_0000274")
+                        "tractability": None
+                        "pharmacogenetics": drug_id (e.g. "CHEMBL535")
+                        "expression": tissue_id (e.g. "UBERON_0002245"), anatomical_system (e.g. "nervous system"), organ (e.g. "brain")
+                        "depmap": tissue_id (e.g. "UBERON_0002245")
+                        "interactions": protein_a_id (e.g. "ENSP00000304915"), protein_b_id (e.g. "ENSP00000379111"), gene_b_id (e.g. "ENSG00000077238")
+        - filter_mode   For resources that support multiple types of filters, this argument specifies how to combine them.
+        - json          If True, returns results in JSON format instead of as a Data Frame. Default: False.
     
-        :return:            list of study IDs that match the keywords
+    
+        Returns requested information in DataFrame format.
         """
     
-        try:
-            from bravado.client import SwaggerClient
-        except ImportError:
-            logger.error(
-                """
-                Some third-party dependencies are missing. Please run the following command:
-                >>> gget.setup('cbio') or $ gget setup cbio
-    
-                Alternative: Install the bravado package using pip (https://pypi.org/project/bravado).
-                """
+        # check if resource argument is valid
+        if resource not in _RESOURCES:
+            raise ValueError(
+                f"'resource' argument specified as {resource}. Expected one of: {', '.join(_RESOURCES)}"
             )
-            return []
     
-        if isinstance(key_words, str):
-            key_words = [key_words]
+        # Wrap everything into a list
+        if filters is not None:
+            filters = {k: v if isinstance(v, list) else [v] for k, v in filters.items()}
     
->       api = SwaggerClient.from_url(
-            "https://www.cbioportal.org/api/v2/api-docs",
-            config={
-                "validate_requests": False,
-                "validate_responses": False,
-                "validate_swagger_spec": False,
-            },
+>       df: pd.DataFrame = _RESOURCES[resource](
+            ensembl_id,
+            limit=limit,
+            verbose=verbose,
+            wrap_text=wrap_text,
+            filters=filters,
+            filter_mode=filter_mode,
         )
 
-gget/gget_cbio.py:336: 
+gget/gget_opentargets.py:63: 
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
-cls = <class 'bravado.client.SwaggerClient'>
-spec_url = 'https://www.cbioportal.org/api/v2/api-docs'
-http_client = <class 'bravado.requests_client.RequestsClient'>()
-request_headers = None
-config = {'validate_requests': False, 'validate_responses': False, 'validate_swagger_spec': False}
+ensembl_id = 'ENSG00000169194', limit = 2, verbose = True, wrap_text = False
+filters = None, filter_mode = 'and'
 
-    @classmethod
-    def from_url(cls, spec_url, http_client=None, request_headers=None, config=None):
-        """Build a :class:`SwaggerClient` from a url to the Swagger
-        specification for a RESTful API.
-    
-        :param spec_url: url pointing at the swagger API specification
-        :type spec_url: str
-        :param http_client: an HTTP client used to perform requests
-        :type  http_client: :class:`bravado.http_client.HttpClient`
-        :param request_headers: Headers to pass with http requests
-        :type  request_headers: dict
-        :param config: Config dict for bravado and bravado_core.
-            See CONFIG_DEFAULTS in :module:`bravado_core.spec`.
-            See CONFIG_DEFAULTS in :module:`bravado.client`.
-    
-        :rtype: :class:`SwaggerClient`
-        """
-        log.debug(u"Loading from %s", spec_url)
-        http_client = http_client or RequestsClient()
-        loader = Loader(http_client, request_headers=request_headers)
->       spec_dict = loader.load_spec(spec_url)
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/bravado/client.py:98: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-self = <bravado.swagger_model.Loader object at 0x7f3bb1aed3a0>
-spec_url = 'https://www.cbioportal.org/api/v2/api-docs', base_url = None
-
-    def load_spec(self, spec_url, base_url=None):
-        """Load a Swagger Spec from the given URL
-    
-        :param spec_url: URL to swagger.json
-        :param base_url: TODO: need this?
-        :returns: json spec in dict form
-        """
-        response = request(
-            self.http_client,
-            spec_url,
-            self.request_headers,
->       ).result()
-          ^^^^^^^^
-
-/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/bravado/swagger_model.py:105: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-self = <bravado.http_future.HttpFuture object at 0x7f3bb1aed4c0>, timeout = None
-
-    def result(
-        self,
-            timeout=None,  # type: typing.Optional[float]
+    def fun(
+        ensembl_id,
+        limit=None,
+        verbose=True,
+        wrap_text=False,
+        filters=None,
+        filter_mode="and",
     ):
-        # type: (...) -> typing.Union[T, IncomingResponse, typing.Tuple[T, IncomingResponse]]
-        """DEPRECATED: please use the `response()` method instead.
+        if limit_key is None:
+            query_string = """
+            query target($ensemblId: String!) {
+                target(ensemblId: $ensemblId) {
+                    <TOP_LEVEL_KEY>{
+                        <ROW_QUERY>
+                    }
+                }
+            }
+            """.replace(
+                "<TOP_LEVEL_KEY>", top_level_key
+            ).replace(
+                "<ROW_QUERY>", inner_query
+            )
+        else:
+            if is_rows_based_query:
+                query_tmp = """
+                count
+                rows{
+                    <INNER_QUERY>
+                }""".replace(
+                    "<INNER_QUERY>", inner_query
+                )
+            else:
+                query_tmp = inner_query
+            query_string = (
+                """
+            query target($ensemblId: String!, $pagination: <LIMIT_TYPE>) {
+                target(ensemblId: $ensemblId) {
+                    <TOP_LEVEL_KEY>(<LIMIT_KEY>: $pagination){
+                        <QUERY>
+                    }
+                }
+            }
+            """.replace(
+                    "<TOP_LEVEL_KEY>", top_level_key
+                )
+                .replace("<LIMIT_TYPE>", limit_type)
+                .replace("<LIMIT_KEY>", limit_key)
+                .replace("<QUERY>", query_tmp)
+            )
     
-        Blocking call to wait for and return the unmarshalled swagger result.
+        actual_limit = limit
     
-        :param timeout: Number of seconds to wait for a response. Defaults to
-            None which means wait indefinitely.
-        :type timeout: float
-        :return: Depends on the value of also_return_response sent in
-            to the constructor.
+        if filters is not None and len(filters) > 0:
+            if user_filter is None:
+                raise ValueError("Filters are not supported for this resource.")
+            valid_keys, filter_func = user_filter
+            invalid_keys = set(filters.keys()) - valid_keys
+            if len(invalid_keys) > 0:
+                invalid_keys = [f"'{k}'" for k in invalid_keys]
+                valid_keys = [f"'{k}'" for k in valid_keys]
+                raise ValueError(
+                    f"The following filter keys are invalid for this resource: {', '.join(invalid_keys)}. Valid keys are: {', '.join(valid_keys)}"
+                )
+            # we have to fetch all data to be able to apply limit in a sane way when filters are specified
+            limit = None
+    
+        pagination = limit_func(limit, is_rows_based_query)
+        variables = {"ensemblId": ensembl_id, "pagination": pagination}
+    
+        if limit_key is None:
+            del variables["pagination"]
+    
+>       results = graphql_query(OPENTARGETS_GRAPHQL_API, query_string, variables)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+gget/gget_opentargets.py:325: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+server = 'https://api.platform.opentargets.org/api/v4/graphql'
+query = '\n            query target($ensemblId: String!, $pagination: Int) {\n                target(ensemblId: $ensemblId) {\...pproved\n        }\n        \n                }\n                    }\n                }\n            }\n            '
+variables = {'ensemblId': 'ENSG00000169194', 'pagination': 2}
+
+    def graphql_query(server, query, variables):
         """
-        incoming_response = self._get_incoming_response(timeout)
-        swagger_result = self._get_swagger_result(incoming_response)
+        Function to perform a GraphQL API query.
     
-        if self.operation is not None:
-            swagger_result = typing.cast(T, swagger_result)
-            if self.request_config.also_return_response:
-                return swagger_result, incoming_response
-            return swagger_result
+        Args:
+        - server        Server to query.
+        - query         Query that is passed to server.
+        - variables     Variables that are passed to server.
     
-        if 200 <= incoming_response.status_code < 300:
-            return incoming_response
+        Returns server output.
+        """
     
->       raise make_http_exception(response=incoming_response)
-E       bravado.exception.HTTPTooManyRequests: 429 Too Many Requests
+        r = requests.post(server, json={"query": query, "variables": variables})
+    
+        if not r.ok:
+            logger.debug(
+                f"Server: {server}, Query: {query}, Variables: {variables}, Response: {r.text}"
+            )
+>           raise RuntimeError(
+                f"{server} returned error status code {r.status_code}. "
+                "Please double-check arguments and try again.\n"
+            )
+E           RuntimeError: https://api.platform.opentargets.org/api/v4/graphql returned error status code 400. Please double-check arguments and try again.
 
-/opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/bravado/http_future.py:282: HTTPTooManyRequests
-__________________________ TestPDB.test_pdb_assembly ___________________________
+gget/utils.py:721: RuntimeError
+_______________ TestOpenTargets.test_opentargets_drugs_no_limit ________________
 
-self = <tests.test_pdb.TestPDB testMethod=test_pdb_assembly>
+self = <tests.test_opentargets.TestOpenTargets testMethod=test_opentargets_drugs_no_limit>
 
-    def test_pdb_assembly(self):
-        test = "test1"
-        expected_result = pdb_dict[test]["expected_result"]
-        result_to_test = pdb(**pdb_dict[test]["args"])
+    def assert_equal_json_hash(self: unittest.TestCase):
+        test = name
+        expected_result = td[test]["expected_result"]
+>       result_to_test = do_call(func, td[test]["args"])
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/from_json.py:117: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+func = <function opentargets at 0x7f99e5818cc0>
+args = {'ensembl_id': 'ENSG00000169194', 'resource': 'drugs'}
+
+    def do_call(func, args):
+        if isinstance(args, dict):
+>           return func(**args)
+                   ^^^^^^^^^^^^
+
+tests/from_json.py:57: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ensembl_id = 'ENSG00000169194', resource = 'drugs', limit = None, verbose = True
+wrap_text = False, filters = None, filter_mode = 'and', json = False
+
+    def opentargets(
+        ensembl_id,
+        resource="diseases",
+        limit=None,
+        verbose=True,
+        wrap_text=False,
+        filters=None,
+        filter_mode="and",
+        json=False,
+    ):
+        """
+        Query OpenTargets for data associated with a given Ensembl gene ID.
+    
+        Args:
+    
+        - ensembl_id    Ensembl gene ID to be queried (str), e.g. "ENSG00000169194".
+        - resource      Defines type of information to be returned.
+                        "diseases":         Returns diseases associated with the gene (default).
+                        "drugs":            Returns drugs associated with the gene.
+                        "tractability":     Returns tractability data for the gene.
+                        "pharmacogenetics": Returns pharmacogenetics data for the gene.
+                        "expression":       Returns gene expression data (by tissues, organs, and anatomical systems).
+                        "depmap":           Returns DepMap gene-disease effect data for the gene.
+                        "interactions":     Returns protein-protein interactions for the gene.
+        - limit         Limit the number of results returned (default: No limit).
+                        Note: Not compatible with the 'tractability' and 'depmap' resources.
+        - verbose       Print progress messages (default: True).
+        - wrap_text     If True, displays data frame with wrapped text for easy reading. Default: False.
+        - filters       Filters to apply to the data. Supported filters by resource:
+                        "diseases": None
+                        "drugs": disease_id (e.g. "EFO_0000274")
+                        "tractability": None
+                        "pharmacogenetics": drug_id (e.g. "CHEMBL535")
+                        "expression": tissue_id (e.g. "UBERON_0002245"), anatomical_system (e.g. "nervous system"), organ (e.g. "brain")
+                        "depmap": tissue_id (e.g. "UBERON_0002245")
+                        "interactions": protein_a_id (e.g. "ENSP00000304915"), protein_b_id (e.g. "ENSP00000379111"), gene_b_id (e.g. "ENSG00000077238")
+        - filter_mode   For resources that support multiple types of filters, this argument specifies how to combine them.
+        - json          If True, returns results in JSON format instead of as a Data Frame. Default: False.
+    
+    
+        Returns requested information in DataFrame format.
+        """
+    
+        # check if resource argument is valid
+        if resource not in _RESOURCES:
+            raise ValueError(
+                f"'resource' argument specified as {resource}. Expected one of: {', '.join(_RESOURCES)}"
+            )
+    
+        # Wrap everything into a list
+        if filters is not None:
+            filters = {k: v if isinstance(v, list) else [v] for k, v in filters.items()}
+    
+>       df: pd.DataFrame = _RESOURCES[resource](
+            ensembl_id,
+            limit=limit,
+            verbose=verbose,
+            wrap_text=wrap_text,
+            filters=filters,
+            filter_mode=filter_mode,
+        )
+
+gget/gget_opentargets.py:63: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ensembl_id = 'ENSG00000169194', limit = None, verbose = True, wrap_text = False
+filters = None, filter_mode = 'and'
+
+    def fun(
+        ensembl_id,
+        limit=None,
+        verbose=True,
+        wrap_text=False,
+        filters=None,
+        filter_mode="and",
+    ):
+        if limit_key is None:
+            query_string = """
+            query target($ensemblId: String!) {
+                target(ensemblId: $ensemblId) {
+                    <TOP_LEVEL_KEY>{
+                        <ROW_QUERY>
+                    }
+                }
+            }
+            """.replace(
+                "<TOP_LEVEL_KEY>", top_level_key
+            ).replace(
+                "<ROW_QUERY>", inner_query
+            )
+        else:
+            if is_rows_based_query:
+                query_tmp = """
+                count
+                rows{
+                    <INNER_QUERY>
+                }""".replace(
+                    "<INNER_QUERY>", inner_query
+                )
+            else:
+                query_tmp = inner_query
+            query_string = (
+                """
+            query target($ensemblId: String!, $pagination: <LIMIT_TYPE>) {
+                target(ensemblId: $ensemblId) {
+                    <TOP_LEVEL_KEY>(<LIMIT_KEY>: $pagination){
+                        <QUERY>
+                    }
+                }
+            }
+            """.replace(
+                    "<TOP_LEVEL_KEY>", top_level_key
+                )
+                .replace("<LIMIT_TYPE>", limit_type)
+                .replace("<LIMIT_KEY>", limit_key)
+                .replace("<QUERY>", query_tmp)
+            )
+    
+        actual_limit = limit
+    
+        if filters is not None and len(filters) > 0:
+            if user_filter is None:
+                raise ValueError("Filters are not supported for this resource.")
+            valid_keys, filter_func = user_filter
+            invalid_keys = set(filters.keys()) - valid_keys
+            if len(invalid_keys) > 0:
+                invalid_keys = [f"'{k}'" for k in invalid_keys]
+                valid_keys = [f"'{k}'" for k in valid_keys]
+                raise ValueError(
+                    f"The following filter keys are invalid for this resource: {', '.join(invalid_keys)}. Valid keys are: {', '.join(valid_keys)}"
+                )
+            # we have to fetch all data to be able to apply limit in a sane way when filters are specified
+            limit = None
+    
+        pagination = limit_func(limit, is_rows_based_query)
+        variables = {"ensemblId": ensembl_id, "pagination": pagination}
+    
+        if limit_key is None:
+            del variables["pagination"]
+    
+>       results = graphql_query(OPENTARGETS_GRAPHQL_API, query_string, variables)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+gget/gget_opentargets.py:325: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+server = 'https://api.platform.opentargets.org/api/v4/graphql'
+query = '\n            query target($ensemblId: String!, $pagination: Int) {\n                target(ensemblId: $ensemblId) {\...pproved\n        }\n        \n                }\n                    }\n                }\n            }\n            '
+variables = {'ensemblId': 'ENSG00000169194', 'pagination': 1}
+
+    def graphql_query(server, query, variables):
+        """
+        Function to perform a GraphQL API query.
+    
+        Args:
+        - server        Server to query.
+        - query         Query that is passed to server.
+        - variables     Variables that are passed to server.
+    
+        Returns server output.
+        """
+    
+        r = requests.post(server, json={"query": query, "variables": variables})
+    
+        if not r.ok:
+            logger.debug(
+                f"Server: {server}, Query: {query}, Variables: {variables}, Response: {r.text}"
+            )
+>           raise RuntimeError(
+                f"{server} returned error status code {r.status_code}. "
+                "Please double-check arguments and try again.\n"
+            )
+E           RuntimeError: https://api.platform.opentargets.org/api/v4/graphql returned error status code 400. Please double-check arguments and try again.
+
+gget/utils.py:721: RuntimeError
+_____________ TestOpenTargets.test_opentargets_expression_no_limit _____________
+
+self = <tests.test_opentargets.TestOpenTargets testMethod=test_opentargets_expression_no_limit>
+
+    def assert_equal_json_hash(self: unittest.TestCase):
+        test = name
+        expected_result = td[test]["expected_result"]
+        result_to_test = do_call(func, td[test]["args"])
+        # If result is a DataFrame, convert to list
+        if isinstance(result_to_test, pd.DataFrame):
+            result_to_test = result_to_test.dropna(axis=1).values.tolist()
+    
+        result_to_test = json.dumps(result_to_test)
+        result_to_test = hashlib.md5(result_to_test.encode()).hexdigest()
     
 >       self.assertEqual(result_to_test, expected_result)
-E       AssertionError: {'pdb[2345 chars]: 2316.9225073146845, 'total_number_interface_[977 chars]2.2'} != {'pdb[2345 chars]: 2315.334008113287, 'total_number_interface_r[976 chars]1.1'}
-E         {'pdbx_struct_assembly': {'details': 'author_and_software_defined_assembly',
-E                                   'id': '1',
-E                                   'method_details': 'PISA',
-E                                   'oligomeric_count': 3,
-E                                   'oligomeric_details': 'trimeric',
-E                                   'rcsb_candidate_assembly': 'Y',
-E                                   'rcsb_details': 'author_and_software_defined_assembly'},
-E          'pdbx_struct_assembly_gen': [{'assembly_id': '1',
-E                                        'asym_id_list': ['A',
-E                                                         'B',
-E                                                         'C',
-E                                                         'G',
-E                                                         'H',
-E                                                         'I',
-E                                                         'J',
-E                                                         'K',
-E                                                         'O',
-E                                                         'P',
-E                                                         'Q'],
-E                                        'oper_expression': '1',
-E                                        'ordinal': 1}],
-E          'pdbx_struct_oper_list': [{'id': '1',
-E                                     'matrix11': 1.0,
-E                                     'matrix12': 0.0,
-E                                     'matrix13': 0.0,
-E                                     'matrix21': 0.0,
-E                                     'matrix22': 1.0,
-E                                     'matrix23': 0.0,
-E                                     'matrix31': 0.0,
-E                                     'matrix32': 0.0,
-E                                     'matrix33': 1.0,
-E                                     'name': '1_555',
-E                                     'symmetry_operation': 'x,y,z',
-E                                     'type': 'identity operation',
-E                                     'vector1': 0.0,
-E                                     'vector2': 0.0,
-E                                     'vector3': 0.0}],
-E          'rcsb_assembly_container_identifiers': {'assembly_id': '1',
-E                                                  'entry_id': '1RH7',
-E                                                  'interface_ids': ['1', '2', '3'],
-E                                                  'rcsb_id': '1RH7-1'},
-E          'rcsb_assembly_info': {'assembly_id': '1',
-E                                 'atom_count': 1762,
-E                                 'branched_atom_count': 0,
-E                                 'branched_entity_count': 0,
-E                                 'branched_entity_instance_count': 0,
-E                                 'deuterated_water_count': 0,
-E                                 'entry_id': '1RH7',
-E                                 'hydrogen_atom_count': 0,
-E                                 'modeled_polymer_monomer_count': 243,
-E                                 'na_polymer_entity_types': 'Other',
-E                                 'nonpolymer_atom_count': 29,
-E                                 'nonpolymer_entity_count': 2,
-E                                 'nonpolymer_entity_instance_count': 5,
-E                                 'num_heterologous_interface_entities': 0,
-E                                 'num_heteromeric_interface_entities': 0,
-E                                 'num_homomeric_interface_entities': 1,
-E                                 'num_interface_entities': 1,
-E                                 'num_interfaces': 3,
-E                                 'num_isologous_interface_entities': 1,
-E                                 'num_na_interface_entities': 0,
-E                                 'num_prot_na_interface_entities': 0,
-E                                 'num_protein_interface_entities': 1,
-E                                 'polymer_atom_count': 1658,
-E                                 'polymer_composition': 'homomeric protein',
-E                                 'polymer_entity_count': 1,
-E                                 'polymer_entity_count_dna': 0,
-E                                 'polymer_entity_count_nucleic_acid': 0,
-E                                 'polymer_entity_count_nucleic_acid_hybrid': 0,
-E                                 'polymer_entity_count_protein': 1,
-E                                 'polymer_entity_count_rna': 0,
-E                                 'polymer_entity_instance_count': 3,
-E                                 'polymer_entity_instance_count_dna': 0,
-E                                 'polymer_entity_instance_count_nucleic_acid': 0,
-E                                 'polymer_entity_instance_count_nucleic_acid_hybrid': 0,
-E                                 'polymer_entity_instance_count_protein': 3,
-E                                 'polymer_entity_instance_count_rna': 0,
-E                                 'polymer_monomer_count': 243,
-E                                 'selected_polymer_entity_types': 'Protein (only)',
-E                                 'solvent_atom_count': 75,
-E                                 'solvent_entity_count': 1,
-E                                 'solvent_entity_instance_count': 3,
-E       -                         'total_assembly_buried_surface_area': 2316.9225073146845,
-E       ?                                                                  ^ ^ ^^^ -------
-E       
-E       +                         'total_assembly_buried_surface_area': 2315.334008113287,
-E       ?                                                                  ^ ^^^^^^^^^ ^
-E       
-E       -                         'total_number_interface_residues': 160,
-E       ?                                                              ^
-E       
-E       +                         'total_number_interface_residues': 161,
-E       ?                                                              ^
-E       
-E                                 'unmodeled_polymer_monomer_count': 0},
-E          'rcsb_id': '1RH7-1',
-E          'rcsb_struct_symmetry': [{'clusters': [{'avg_rmsd': 0.8418294327358263,
-E                                                  'members': [{'asym_id': 'A',
-E                                                               'pdbx_struct_oper_list_ids': ['1']},
-E                                                              {'asym_id': 'C',
-E                                                               'pdbx_struct_oper_list_ids': ['1']},
-E                                                              {'asym_id': 'B',
-E                                                               'pdbx_struct_oper_list_ids': ['1']}]}],
-E                                    'kind': 'Global Symmetry',
-E                                    'oligomeric_state': 'Homo 3-mer',
-E                                    'rotation_axes': [{'end': [13.473746075056361,
-E                                                               41.0962265805248,
-E                                                               -5.777587727129287],
-E                                                       'order': 3,
-E                                                       'start': [13.838143875349235,
-E                                                                 28.581996104345052,
-E                                                                 78.43743587115125]}],
-E                                    'stoichiometry': ['A3'],
-E                                    'symbol': 'C3',
-E                                    'type': 'Cyclic'}],
-E          'rcsb_struct_symmetry_lineage': [{'depth': 0,
-E                                            'id': 'Global Symmetry',
-E                                            'name': 'Global Symmetry'},
-E                                           {'depth': 2,
-E                                            'id': 'Global Symmetry.Cyclic.C3',
-E                                            'name': 'C3'},
-E                                           {'depth': 3,
-E                                            'id': 'Global Symmetry.Cyclic.C3.Homo 3-mer',
-E                                            'name': 'Homo 3-mer'},
-E                                           {'depth': 1,
-E                                            'id': 'Global Symmetry.Cyclic',
-E                                            'name': 'Cyclic'}],
-E       -  'rcsb_struct_symmetry_provenance_code': 'biojava-7.2.2'}
-E       ?                                                     ^ ^
-E       
-E       +  'rcsb_struct_symmetry_provenance_code': 'biojava-7.1.1'}
-E       ?                                                     ^ ^
+E       AssertionError: '4024b12c2134734ce8f952fdd7155135' != 'c1300a64c439e9b1a0adf4475cf138db'
+E       - 4024b12c2134734ce8f952fdd7155135
+E       + c1300a64c439e9b1a0adf4475cf138db
 
-tests/test_pdb.py:19: AssertionError
+tests/from_json.py:125: AssertionError
+------------------------------ Captured log call -------------------------------
+INFO     gget.utils:gget_opentargets.py:345 Retrieved 110/110 baseline expressions.
 =============================== warnings summary ===============================
 tests/test_blast.py::TestBlast::test_blast_nt
   /home/runner/work/gget/gget/gget/gget_blast.py:327: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
@@ -563,25 +656,29 @@ tests/test_blast.py::TestBlast::test_blast_nt
 
 tests/test_cbio.py::TestCbioSearch::test_cbio_search
 tests/test_cbio.py::TestCbioSearch::test_cbio_search
-  /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/swagger_spec_validator/validator12.py:18: DeprecationWarning: jsonschema.RefResolver is deprecated as of v4.18.0, in favor of the https://github.com/python-jsonschema/referencing library, which provides more compliant referencing behavior as well as more flexible APIs for customization. A future release will remove RefResolver. Please file a feature request (on referencing) if you are missing an API for the kind of customization you need.
+  /opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/site-packages/swagger_spec_validator/validator12.py:18: DeprecationWarning: jsonschema.RefResolver is deprecated as of v4.18.0, in favor of the https://github.com/python-jsonschema/referencing library, which provides more compliant referencing behavior as well as more flexible APIs for customization. A future release will remove RefResolver. Please file a feature request (on referencing) if you are missing an API for the kind of customization you need.
     from jsonschema import RefResolver
 
 tests/test_cbio.py::TestCbioSearch::test_cbio_search
-  /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/swagger_spec_validator/ref_validators.py:14: DeprecationWarning: jsonschema.RefResolver is deprecated as of v4.18.0, in favor of the https://github.com/python-jsonschema/referencing library, which provides more compliant referencing behavior as well as more flexible APIs for customization. A future release will remove RefResolver. Please file a feature request (on referencing) if you are missing an API for the kind of customization you need.
+  /opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/site-packages/swagger_spec_validator/ref_validators.py:14: DeprecationWarning: jsonschema.RefResolver is deprecated as of v4.18.0, in favor of the https://github.com/python-jsonschema/referencing library, which provides more compliant referencing behavior as well as more flexible APIs for customization. A future release will remove RefResolver. Please file a feature request (on referencing) if you are missing an API for the kind of customization you need.
     from jsonschema.validators import RefResolver
 
 tests/test_cbio.py::TestCbioSearch::test_cbio_search
-  /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/swagger_spec_validator/validator20.py:18: DeprecationWarning: jsonschema.RefResolver is deprecated as of v4.18.0, in favor of the https://github.com/python-jsonschema/referencing library, which provides more compliant referencing behavior as well as more flexible APIs for customization. A future release will remove RefResolver. Please file a feature request (on referencing) if you are missing an API for the kind of customization you need.
+  /opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/site-packages/swagger_spec_validator/validator20.py:18: DeprecationWarning: jsonschema.RefResolver is deprecated as of v4.18.0, in favor of the https://github.com/python-jsonschema/referencing library, which provides more compliant referencing behavior as well as more flexible APIs for customization. A future release will remove RefResolver. Please file a feature request (on referencing) if you are missing an API for the kind of customization you need.
     from jsonschema.validators import RefResolver
 
 tests/test_cbio.py::TestCbioSearch::test_cbio_search
 tests/test_cbio.py::TestCbioSearch::test_cbio_search
-  /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/bravado_core/swagger20_validator.py:6: DeprecationWarning: jsonschema.RefResolver is deprecated as of v4.18.0, in favor of the https://github.com/python-jsonschema/referencing library, which provides more compliant referencing behavior as well as more flexible APIs for customization. A future release will remove RefResolver. Please file a feature request (on referencing) if you are missing an API for the kind of customization you need.
+  /opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/site-packages/bravado_core/swagger20_validator.py:6: DeprecationWarning: jsonschema.RefResolver is deprecated as of v4.18.0, in favor of the https://github.com/python-jsonschema/referencing library, which provides more compliant referencing behavior as well as more flexible APIs for customization. A future release will remove RefResolver. Please file a feature request (on referencing) if you are missing an API for the kind of customization you need.
     from jsonschema import RefResolver
 
 tests/test_cbio.py::TestCbioSearch::test_cbio_search
-  /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/site-packages/bravado_core/spec.py:14: DeprecationWarning: jsonschema.RefResolver is deprecated as of v4.18.0, in favor of the https://github.com/python-jsonschema/referencing library, which provides more compliant referencing behavior as well as more flexible APIs for customization. A future release will remove RefResolver. Please file a feature request (on referencing) if you are missing an API for the kind of customization you need.
+  /opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/site-packages/bravado_core/spec.py:14: DeprecationWarning: jsonschema.RefResolver is deprecated as of v4.18.0, in favor of the https://github.com/python-jsonschema/referencing library, which provides more compliant referencing behavior as well as more flexible APIs for customization. A future release will remove RefResolver. Please file a feature request (on referencing) if you are missing an API for the kind of customization you need.
     from jsonschema.validators import RefResolver
+
+tests/test_cbio.py: 16 warnings
+  /opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/site-packages/bravado_core/model.py:888: DeprecationWarning: jsonschema.RefResolver.in_scope is deprecated and will be removed in a future release.
+    with spec.resolver.in_scope(additional_uri):
 
 tests/test_cellxgene.py::TestCellxgene::test_cellxgene_adata
   /home/runner/work/gget/gget/gget/gget_cellxgene.py:222: FutureWarning: The argument `column_names` is deprecated and will be removed in a future release. Please use `obs_column_names` and `var_column_names` instead.
@@ -589,7 +686,7 @@ tests/test_cellxgene.py::TestCellxgene::test_cellxgene_adata
 
 tests/test_cellxgene.py::TestCellxgene::test_cellxgene_adata
 tests/test_cellxgene.py::TestCellxgene::test_cellxgene_adata
-  /opt/hostedtoolcache/Python/3.12.12/x64/lib/python3.12/functools.py:912: ImplicitModificationWarning: Transforming to str index.
+  /opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/functools.py:912: ImplicitModificationWarning: Transforming to str index.
     return dispatch(args[0].__class__)(*args, **kw)
 
 tests/test_cosmic.py::TestCosmicWorkflow::test_cosmic_defaults
@@ -604,232 +701,49 @@ tests/test_mutate.py: 29 warnings
   /home/runner/work/gget/gget/gget/gget_mutate.py:663: UserWarning: This pattern is interpreted as a regular expression, and has match groups. To actually get the groups, use str.extract.
     mask = mutations[mut_column].str.contains(combined_pattern)
 
-tests/test_ref.py: 22 warnings
-tests/test_utils.py: 1 warning
-  /home/runner/work/gget/gget/gget/utils.py:924: DeprecationWarning: Call to deprecated method findAll. (Replaced by find_all) -- Deprecated since version 4.0.0.
-    for subsoup in soup.body.findAll("a"):
-
-tests/test_ref.py: 39 warnings
-  /home/runner/work/gget/gget/gget/gget_ref.py:43: DeprecationWarning: Call to deprecated method findAll. (Replaced by find_all) -- Deprecated since version 4.0.0.
-    links = [stuff.text.strip() for stuff in soup.findAll("td")]
-
-tests/test_ref.py::TestRef::test_ref
-tests/test_ref.py::TestRef::test_ref_ftp
-  /home/runner/work/gget/gget/gget/gget_ref.py:350: DeprecationWarning: Call to deprecated method findAll. (Replaced by find_all) -- Deprecated since version 4.0.0.
-    links = [stuff.text.strip() for stuff in soup.findAll("td")]
-
-tests/test_ref.py: 32 warnings
-tests/test_utils.py: 4 warnings
-  /home/runner/work/gget/gget/gget/utils.py:899: DeprecationWarning: Call to deprecated method findAll. (Replaced by find_all) -- Deprecated since version 4.0.0.
-    for subsoup in soup.body.findAll("a"):
-
-tests/test_ref.py: 7 warnings
-tests/test_search.py: 44 warnings
-  /home/runner/work/gget/gget/gget/utils.py:845: DeprecationWarning: Call to deprecated method findAll. (Replaced by find_all) -- Deprecated since version 4.0.0.
-    for subsoup in soup.body.findAll("a"):
-
-tests/test_search.py: 10 warnings
-  /home/runner/work/gget/gget/gget/gget_search.py:244: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
-    df_temp = pd.read_sql(query, con=db_connection)
-
-tests/test_search.py: 9 warnings
-tests/test_utils.py: 1 warning
-  /home/runner/work/gget/gget/gget/utils.py:822: DeprecationWarning: Call to deprecated method findAll. (Replaced by find_all) -- Deprecated since version 4.0.0.
-    for subsoup in soup.body.findAll("a"):
-
-tests/test_search.py: 36 warnings
-tests/test_utils.py: 4 warnings
-  /home/runner/work/gget/gget/gget/utils.py:804: DeprecationWarning: Call to deprecated method findAll. (Replaced by find_all) -- Deprecated since version 4.0.0.
-    for subsoup in soup.body.findAll("a"):
-
-tests/test_search.py::TestSearch::test_search_gene_two_sw_limit
-tests/test_search.py::TestSearch::test_search_transcript_one_sw
-tests/test_search.py::TestSearch::test_search_transcript_two_sw_and
-tests/test_search.py::TestSearch::test_search_transcript_two_sw_or
-  /home/runner/work/gget/gget/gget/gget_search.py:279: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
-    df_temp = pd.read_sql(query, con=db_connection)
-
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-================================ tests coverage ================================
-_______________ coverage: platform linux, python 3.12.12-final-0 _______________
-
-Name                       Stmts   Miss  Cover   Missing
---------------------------------------------------------
-gget/__init__.py              35      2    94%   34-35
-gget/__main__.py               2      2     0%   1-3
-gget/compile.py               39     27    31%   30-84
-gget/constants.py             34      0   100%
-gget/gget_8cube.py            83     28    66%   26-27, 34-43, 93, 105, 112, 115-118, 158, 175, 182, 185-188, 229, 246, 255, 258-261
-gget/gget_alphafold.py       362    321    11%   86-108, 115-116, 123-149, 181-186, 233-867
-gget/gget_archs4.py           79     13    84%   75-78, 84, 107, 123-126, 139-142, 148, 170, 198-201, 207
-gget/gget_bgee.py             56      6    89%   60, 83, 103, 130, 154, 175
-gget/gget_blast.py           127     36    72%   92, 124-142, 163-165, 204, 207, 251-255, 296-299, 302-303, 322-325, 332-333, 336-341, 346, 351-354
-gget/gget_blat.py             86     10    88%   58-62, 95, 136, 139, 168, 232-233, 239
-gget/gget_cbio.py            524    415    21%   28, 39-67, 77-87, 136-137, 143-147, 154-157, 161, 164, 172-177, 208, 226, 265, 271-275, 278, 282-294, 296, 302-305, 322-331, 334, 345-372, 376-389, 393-416, 420-441, 447-450, 454-473, 477, 494-537, 540-757, 760-789, 802-1164, 1218-1254
-gget/gget_cellxgene.py        53      9    83%   21-22, 140-149, 176, 215, 231, 247
-gget/gget_cosmic.py          277    153    45%   24-26, 30-82, 94-109, 112-114, 117-119, 122-126, 131-135, 140-142, 155-168, 189-202, 220, 242-243, 283-308, 311, 396-398, 410, 416, 424, 427-429, 454-472, 496-621, 637-646, 649, 651, 653, 852-855, 868-870, 879-891, 896-901
-gget/gget_diamond.py          98     26    73%   16, 69, 75, 77, 95, 98-99, 105, 111, 117-121, 130-132, 145, 147, 160, 162, 181, 184, 216-217, 223
-gget/gget_elm.py             158     22    86%   128, 278, 301, 325-332, 353, 420-423, 426, 436, 490, 503, 506-515, 519-520
-gget/gget_enrichr.py         213     42    80%   39-42, 48, 172, 226-237, 254-255, 263-264, 290, 310, 316-322, 336, 364-374, 403-418, 439, 451-453, 555, 564-565, 575-576, 583
-gget/gget_gpt.py              20      6    70%   56-65, 88, 110-111
-gget/gget_info.py            316    106    66%   58-59, 63-64, 150-152, 161-162, 175, 201-206, 213-216, 242, 255-266, 300-308, 324-342, 368-369, 453-454, 461-462, 465-466, 469-470, 473-474, 507-508, 511-512, 515-516, 543-544, 547-548, 551-552, 575-576, 579-673, 677
-gget/gget_muscle.py           85     12    86%   17, 45, 68-69, 78-80, 91, 94, 115, 162-163
-gget/gget_mutate.py          434    193    56%   124-175, 186, 190-198, 215-226, 274-278, 283-287, 291-296, 300-305, 309-312, 317-320, 324-334, 340-350, 493, 516-520, 528, 538-542, 553-557, 576, 583, 593-600, 611, 616, 624, 635, 730-741, 855-879, 891-904, 948-985, 1032-1050, 1053-1056, 1070-1077, 1083-1093, 1109-1110, 1147, 1152, 1156, 1160, 1165-1241, 1255-1258, 1299, 1308-1324, 1332-1336, 1341, 1349, 1353
-gget/gget_opentargets.py     148      6    96%   75, 184, 192-195, 204-205
-gget/gget_pdb.py              60     22    63%   52, 58, 67, 75, 83, 104, 108-110, 113-129, 141-147
-gget/gget_ref.py             215     57    73%   32, 97-98, 117-118, 124-152, 161, 174, 176, 178-179, 186-187, 225, 244, 256-258, 279-281, 308-310, 329-331, 384-386, 485-494, 507, 512-513, 529-534, 538, 542, 548, 553-554
-gget/gget_search.py          142     23    84%   84-87, 96, 113, 117, 125, 149-150, 157, 165-171, 213-222, 308-309, 315-316, 368-369, 376-377, 385
-gget/gget_seq.py             146     24    84%   44-47, 49, 119, 140-143, 177-178, 207-208, 245-248, 271-272, 293, 312-315, 334, 356, 365, 402-405
-gget/gget_setup.py           215    149    31%   49-90, 108, 113, 116, 128-138, 152, 175-176, 189, 199, 209, 221-466
-gget/gget_virus.py          1962    950    52%   131, 154, 158, 169-170, 211-215, 220-234, 241, 252-253, 271-276, 305-331, 480-504, 508-614, 652-736, 764-765, 801-802, 835-970, 995-1035, 1085-1220, 1268-1362, 1416-1505, 1539, 1546-1547, 1617, 1631-1642, 1714-1717, 1726, 1753-1777, 1784, 1795-1797, 1813-1833, 1900-1901, 1943-1950, 1987-1995, 2046, 2244-2245, 2249-2251, 2288, 2291-2292, 2294-2296, 2332, 2335-2336, 2338-2340, 2352-2353, 2366-2369, 2503-2505, 2540-2542, 2614, 2617, 2629-2630, 2659-2660, 2664-2672, 2676-2693, 2703, 2706, 2710-2714, 2779-2781, 2812, 2822-2887, 3005, 3042-3048, 3058, 3103-3106, 3133-3136, 3146, 3149-3150, 3215, 3258, 3270-3273, 3405-3407, 3414-3416, 3485, 3518-3520, 3534-3548, 3552-3562, 3566-3570, 3575-3577, 3581-3594, 3607-3617, 3623-3625, 3635-3653, 3657-3676, 3688-3691, 3694-3697, 3841-3845, 3917, 3971-3973, 3993-4019, 4028-4053, 4075-4091, 4117-4118, 4131-4133, 4150-4151, 4220-4221, 4230-4249, 4254, 4298, 4311-4313, 4322-4325, 4359-4373, 4391-4400, 4433-4436, 4455-4603, 4618-4624, 4633
-gget/main.py                 838    838     0%   1-3773
-gget/utils.py                448     77    83%   31, 36-42, 72, 95, 119, 122, 186, 193, 245, 257, 285, 296, 347, 367, 378, 411-412, 452-453, 468-469, 476-478, 494-495, 501-502, 623-639, 676, 695, 757, 797, 837, 953, 961, 969-989, 994, 999, 1005-1006, 1024-1025, 1116, 1140-1141, 1156, 1164
---------------------------------------------------------
-TOTAL                       7255   3575    51%
 ============================= slowest 10 durations =============================
-20144.13s call     tests/test_blast.py::TestBlast::test_blast_nt
-55.23s call     tests/test_virus.py::TestVirus::test_virus_with_lab_passaged_filter
-51.63s call     tests/test_virus.py::TestVirus::test_virus_with_annotated_filter
-46.40s call     tests/test_virus.py::TestVirus::test_virus_host_filter_verification
-45.95s call     tests/test_virus.py::TestVirus::test_virus_with_host_filter
-30.95s call     tests/test_virus.py::TestVirus::test_virus_with_has_proteins_filter
-30.32s call     tests/test_cellxgene.py::TestCellxgene::test_cellxgene_adata
-28.98s call     tests/test_virus.py::TestVirus::test_virus_with_max_ambiguous_chars_filter
-28.19s call     tests/test_virus.py::TestVirus::test_virus_integer_virus_id
-27.75s call     tests/test_virus.py::TestVirus::test_virus_with_source_database_filter
+714.18s call     tests/test_blast.py::TestBlast::test_blast_nt
+45.89s call     tests/test_cellxgene.py::TestCellxgene::test_cellxgene_adata
+13.08s call     tests/test_elm.py::TestELM::test_elm_uniprot_id_new
+11.98s setup    tests/test_cosmic.py::TestCosmicWorkflow::test_cosmic_defaults
+10.05s call     tests/test_cosmic.py::TestCosmicWorkflow::test_cosmic_defaults
+8.66s call     tests/test_enrichr.py::TestEnrichr::test_enrichr_background_ensembl
+4.98s call     tests/test_info.py::TestInfo::test_info_transcript
+4.23s call     tests/test_info.py::TestInfo::test_info_gene
+3.65s call     tests/test_archs4.py::TestArchs4::test_archs4_mouse_json_ensembl
+3.58s call     tests/test_archs4.py::TestArchs4::test_archs4_tissue_ensembl
 =========================== short test summary info ============================
-FAILED tests/test_cbio.py::TestCbioSearch::test_cbio_search - bravado.exception.HTTPTooManyRequests: 429 Too Many Requests
-FAILED tests/test_pdb.py::TestPDB::test_pdb_assembly - AssertionError: {'pdb[2345 chars]: 2316.9225073146845, 'total_number_interface_[977 chars]2.2'} != {'pdb[2345 chars]: 2315.334008113287, 'total_number_interface_r[976 chars]1.1'}
-  {'pdbx_struct_assembly': {'details': 'author_and_software_defined_assembly',
-                            'id': '1',
-                            'method_details': 'PISA',
-                            'oligomeric_count': 3,
-                            'oligomeric_details': 'trimeric',
-                            'rcsb_candidate_assembly': 'Y',
-                            'rcsb_details': 'author_and_software_defined_assembly'},
-   'pdbx_struct_assembly_gen': [{'assembly_id': '1',
-                                 'asym_id_list': ['A',
-                                                  'B',
-                                                  'C',
-                                                  'G',
-                                                  'H',
-                                                  'I',
-                                                  'J',
-                                                  'K',
-                                                  'O',
-                                                  'P',
-                                                  'Q'],
-                                 'oper_expression': '1',
-                                 'ordinal': 1}],
-   'pdbx_struct_oper_list': [{'id': '1',
-                              'matrix11': 1.0,
-                              'matrix12': 0.0,
-                              'matrix13': 0.0,
-                              'matrix21': 0.0,
-                              'matrix22': 1.0,
-                              'matrix23': 0.0,
-                              'matrix31': 0.0,
-                              'matrix32': 0.0,
-                              'matrix33': 1.0,
-                              'name': '1_555',
-                              'symmetry_operation': 'x,y,z',
-                              'type': 'identity operation',
-                              'vector1': 0.0,
-                              'vector2': 0.0,
-                              'vector3': 0.0}],
-   'rcsb_assembly_container_identifiers': {'assembly_id': '1',
-                                           'entry_id': '1RH7',
-                                           'interface_ids': ['1', '2', '3'],
-                                           'rcsb_id': '1RH7-1'},
-   'rcsb_assembly_info': {'assembly_id': '1',
-                          'atom_count': 1762,
-                          'branched_atom_count': 0,
-                          'branched_entity_count': 0,
-                          'branched_entity_instance_count': 0,
-                          'deuterated_water_count': 0,
-                          'entry_id': '1RH7',
-                          'hydrogen_atom_count': 0,
-                          'modeled_polymer_monomer_count': 243,
-                          'na_polymer_entity_types': 'Other',
-                          'nonpolymer_atom_count': 29,
-                          'nonpolymer_entity_count': 2,
-                          'nonpolymer_entity_instance_count': 5,
-                          'num_heterologous_interface_entities': 0,
-                          'num_heteromeric_interface_entities': 0,
-                          'num_homomeric_interface_entities': 1,
-                          'num_interface_entities': 1,
-                          'num_interfaces': 3,
-                          'num_isologous_interface_entities': 1,
-                          'num_na_interface_entities': 0,
-                          'num_prot_na_interface_entities': 0,
-                          'num_protein_interface_entities': 1,
-                          'polymer_atom_count': 1658,
-                          'polymer_composition': 'homomeric protein',
-                          'polymer_entity_count': 1,
-                          'polymer_entity_count_dna': 0,
-                          'polymer_entity_count_nucleic_acid': 0,
-                          'polymer_entity_count_nucleic_acid_hybrid': 0,
-                          'polymer_entity_count_protein': 1,
-                          'polymer_entity_count_rna': 0,
-                          'polymer_entity_instance_count': 3,
-                          'polymer_entity_instance_count_dna': 0,
-                          'polymer_entity_instance_count_nucleic_acid': 0,
-                          'polymer_entity_instance_count_nucleic_acid_hybrid': 0,
-                          'polymer_entity_instance_count_protein': 3,
-                          'polymer_entity_instance_count_rna': 0,
-                          'polymer_monomer_count': 243,
-                          'selected_polymer_entity_types': 'Protein (only)',
-                          'solvent_atom_count': 75,
-                          'solvent_entity_count': 1,
-                          'solvent_entity_instance_count': 3,
--                         'total_assembly_buried_surface_area': 2316.9225073146845,
-?                                                                  ^ ^ ^^^ -------
+FAILED tests/test_opentargets.py::TestOpenTargets::test_opentargets - AssertionError: Lists differ: [['EF[171 chars]', 0.7297489019498119], ['MONDO_0004979', 'ast[535 chars]653]] != [['EF[171 chars]', 0.6908981975876463], ['MONDO_0004979', 'ast[535 chars]614]]
 
-+                         'total_assembly_buried_surface_area': 2315.334008113287,
-?                                                                  ^ ^^^^^^^^^ ^
+First differing element 0:
+['EFO[129 chars] occurs during the first 2 years of life.', 0.7297489019498119]
+['EFO[129 chars] occurs during the first 2 years of life.', 0.6908981975876463]
 
--                         'total_number_interface_residues': 160,
-?                                                              ^
-
-+                         'total_number_interface_residues': 161,
-?                                                              ^
-
-                          'unmodeled_polymer_monomer_count': 0},
-   'rcsb_id': '1RH7-1',
-   'rcsb_struct_symmetry': [{'clusters': [{'avg_rmsd': 0.8418294327358263,
-                                           'members': [{'asym_id': 'A',
-                                                        'pdbx_struct_oper_list_ids': ['1']},
-                                                       {'asym_id': 'C',
-                                                        'pdbx_struct_oper_list_ids': ['1']},
-                                                       {'asym_id': 'B',
-                                                        'pdbx_struct_oper_list_ids': ['1']}]}],
-                             'kind': 'Global Symmetry',
-                             'oligomeric_state': 'Homo 3-mer',
-                             'rotation_axes': [{'end': [13.473746075056361,
-                                                        41.0962265805248,
-                                                        -5.777587727129287],
-                                                'order': 3,
-                                                'start': [13.838143875349235,
-                                                          28.581996104345052,
-                                                          78.43743587115125]}],
-                             'stoichiometry': ['A3'],
-                             'symbol': 'C3',
-                             'type': 'Cyclic'}],
-   'rcsb_struct_symmetry_lineage': [{'depth': 0,
-                                     'id': 'Global Symmetry',
-                                     'name': 'Global Symmetry'},
-                                    {'depth': 2,
-                                     'id': 'Global Symmetry.Cyclic.C3',
-                                     'name': 'C3'},
-                                    {'depth': 3,
-                                     'id': 'Global Symmetry.Cyclic.C3.Homo 3-mer',
-                                     'name': 'Homo 3-mer'},
-                                    {'depth': 1,
-                                     'id': 'Global Symmetry.Cyclic',
-                                     'name': 'Cyclic'}],
--  'rcsb_struct_symmetry_provenance_code': 'biojava-7.2.2'}
-?                                                     ^ ^
-
-+  'rcsb_struct_symmetry_provenance_code': 'biojava-7.1.1'}
-?                                                     ^ ^
-========== 2 failed, 248 passed, 257 warnings in 20897.52s (5:48:17) ===========
+  [['EFO_0000274',
+    'atopic eczema',
+    'A common chronic pruritic inflammatory skin disease with a strong genetic '
+    'component. Onset typically occurs during the first 2 years of life.',
+-   0.7297489019498119],
++   0.6908981975876463],
+   ['MONDO_0004979',
+    'asthma',
+    'A bronchial disease that is characterized by chronic inflammation and '
+    'narrowing of the airways, which is caused by a combination of environmental '
+    'and genetic factors resulting in recurring periods of wheezing (a whistling '
+    'sound while breathing), chest tightness, shortness of breath, mucus '
+    'production and coughing. The symptoms appear due to a variety of triggers '
+    'such as allergens, irritants, respiratory infections, weather changes, '
+    'exercise, stress, reflux disease, medications, foods and emotional anxiety.',
+-   0.6642728577751653]]
++   0.6506508395200614]]
+FAILED tests/test_opentargets.py::TestOpenTargets::test_opentargets_depmap - AssertionError: '4c550571d29a7e0136e12e2fa9297655' != '4c0393626ee958f860d4c1fd0b6b77ee'
+- 4c550571d29a7e0136e12e2fa9297655
++ 4c0393626ee958f860d4c1fd0b6b77ee
+FAILED tests/test_opentargets.py::TestOpenTargets::test_opentargets_drugs - RuntimeError: https://api.platform.opentargets.org/api/v4/graphql returned error status code 400. Please double-check arguments and try again.
+FAILED tests/test_opentargets.py::TestOpenTargets::test_opentargets_drugs_no_limit - RuntimeError: https://api.platform.opentargets.org/api/v4/graphql returned error status code 400. Please double-check arguments and try again.
+FAILED tests/test_opentargets.py::TestOpenTargets::test_opentargets_expression_no_limit - AssertionError: '4024b12c2134734ce8f952fdd7155135' != 'c1300a64c439e9b1a0adf4475cf138db'
+- 4024b12c2134734ce8f952fdd7155135
++ c1300a64c439e9b1a0adf4475cf138db
+!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 5 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!
+============ 5 failed, 136 passed, 58 warnings in 891.65s (0:14:51) ============
